@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE>OUR BLOG SITE</title>
+        <!-- Link to Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
+        
+    <script src="{{ url_for('static', filename='hometab.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hometab.css') }}">
+</head>
+<body>
+    <header>
+        <h1>OUR BLOG SITE</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to Our Blog SIte!</h2>
+            <p>Discover interesting articles, insights, and more.</p>
+        </section>
+
+        <!-- Post 1 -->
+        <section class="blog-post">
+            <h3><a href="/post1">Post Title 1</a></h3>
+            <img src="{{ url_for('static', filename='images/post1.jpg') }}" alt="Image 1">
+            <p>This is the content of your first blog post. Feel free to write about any topic that interests you.</p>
+        </section>
+
+        <!-- Post 2 -->
+        <section class="blog-post">
+            <h3><a href="/post2">Post Title 2</a></h3>
+            <img src="{{ url_for('static', filename='images/post2.jpg') }}" alt="Image 2">
+            <p>This is the content of your second blog post. You can share your thoughts, experiences, or any valuable information.</p>
+        </section>
+
+        <!-- Add more posts if needed -->
+
+    </main>
+    <footer>
+        
+        &copy; 2023-24 OUR BLOG SITE
+    </footer>
+</body>
+</html>
