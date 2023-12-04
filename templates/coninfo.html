@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MESSAGES>OUR BLOG SITE</title>
+        <!-- Link to Favicon -->
+        <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='coninfo.css') }}">
+      </head>
+    <body>
+        <header>
+            <h1>FEEDBACK RECORDS</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <table border="1">
+            <thead>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Message</td>
+                
+            </thead>
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["name"]}}</td>
+                    <td>{{row["email"]}}</td>
+                    <td>{{row["message"]}}</td>   
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="/" class="back-button">Go back to home page</a>
+    <footer>
+        &copy; 2023-24 OUR BLOG SITEe
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT>OUR BLOG SITE</title>
+    <!-- Link to Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='abouttab.css') }}">
+</head>
+<body>
+    <header>
+        <h1>OUR BLOG SITE</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Welcome to Our Blog SIte! I'm Sharm, the creator and writer behind this blog. Let me share a bit about myself.</p>
+            
+            <p>I have a passion for [your interests or topics you write about]. Whether it's [specific interest 1], [specific interest 2], or [specific interest 3], you'll find a variety of content here.</p>
+
+            <p>Feel free to explore and discover more about [something unique about your blog or your writing style]. If you have any questions or want to connect, don't hesitate to reach out via the <a href="/contact">Contact</a> page.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023-24 OUR BLOG SITE
+    </footer>
+</body>
+</html>
