@@ -21,7 +21,6 @@
 ## 🚀 Getting Started
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/subhankardas2000/PROJ-CS782-repo.git
 
 
